@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Me</title>
+<style>
+    /* Basic styling for demonstration */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        padding: 70px;
+    }
+    .contact-form {
+        max-width: 400px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 50px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .contact-form label, .contact-form input, .contact-form textarea {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .contact-form textarea {
+        height: 150px;
+    }
+    .contact-form button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+    }
+    .contact-form button:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+    <div class="contact-form">
+        <h2>Contact Me</h2>
+        <form action="/submit-your-form-handler" method="post">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your first name.." required>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email.." required>
+
+            <label for="Pnumber">Phone Number</label>
+            <input type="int" id="Pnumber" name="Pnumber" placeholder="Your Phone Number.." required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write something.." required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
