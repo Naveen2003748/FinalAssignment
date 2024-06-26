@@ -23,14 +23,3 @@ downloadBtn.addEventListener('click', () => {
     document.body.removeChild(link);
 });
 
-
-
-// You can add JavaScript for interactivity here if needed
-// Example: toggle a class on click
-// const projectItems = document.querySelectorAll('.project');
-// projectItems.forEach(item => {
-//     item.addEventListener('click', () => {
-//         item.classList.toggle('active');
-//     });
-// });
-
